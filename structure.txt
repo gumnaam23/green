@@ -1,0 +1,502 @@
+GreenEarth/
+└── app/
+    ├── layout.js
+    ├── page.js                      # Home Page
+
+    ├── about/
+    │   └── page.js                  # About Evergreen NGO
+
+    ├── donate/
+    │   ├── page.js                  # Donation Page (Payment form)
+    │   └── success/
+    │       └── page.js              # Payment Success Page
+
+    ├── finances/
+    │   ├── page.js                  # Total fund received overview
+    │   └── reports/
+    │       └── page.js              # Detailed fund reports (monthly/yearly)
+
+    ├── trees/
+    │   ├── page.js                  # Trees Overview (Total Trees, Fund, Pending etc.)
+    │   ├── planted/
+    │   │   └── page.js              # List of planted trees with locations
+    │   ├── pending/
+    │   │   └── page.js              # Pending tree plantation tasks
+    │   └── locations/
+    │       └── page.js              # Map or list of locations where plantation is done or planned
+
+    ├── volunteers/
+    │   └── page.js                  # Volunteer registration / details page
+
+    ├── contact/
+    │   └── page.js                  # Contact Evergreen NGO
+    │
+    ├── faq/
+    │    └── page.js                  # FAQ Page
+    │
+    ├── context/
+    │   ├── context.js                 # Contact Evergreen NGO
+    │   └── dataProvider.js                  # Contact Evergreen NGO
+
+    ├── admin/                       # Admin dashboard section
+    │   ├── page.js                  # Admin Home
+    │   ├── layout.js
+    │   ├── donations/
+    │   │   └── page.js              # View all donations
+    │   ├── locations/
+    │   │   └── page.js              # Manage plantation locations
+    │   │
+    │   ├── trees/
+    │   │   ├── add/
+    │   │   │   └── page.js          # Add new tree plantation entry
+    │   │   ├── update/
+    │   │   │   └── page.js          # Update planted trees
+    │   │   └── pending/
+    │   │       └── page.js          # Manage pending plantations
+
+
+adminlayout
+
+
+
+
+1. Hero / Intro Section
+
+NGO ka short intro
+
+Mission ka tagline
+
+Background soft green/leaf pattern
+
+✔ 2. Mission & Vision Section
+
+“Why EverGreen?”
+
+Mission & Vision ka 2-column layout
+
+✔ 3. Our Story Section
+
+Kaise start hua, kis problem ko solve karta hai
+
+Timeline ya short paragraph
+
+✔ 4. Statistics Highlight Section
+
+Kitne trees lag chuke
+
+Kitna fund use hua
+
+Kitne volunteers hain
+
+Short info cards
+
+✔ 5. Team Section (Optional)
+
+Founder + core team
+
+Photo + short title
+(Agar aap chaho to rakh sakte ho, nahi to skip bhi ho sakta hai)
+
+✔ 6. Impact Section
+
+Kaun-kaun se areas me work kiya
+
+Impact stories / achievements
+
+✔ 7. Call to Action (CTA)
+
+“Join as Volunteer”
+
+“Support by Donation”
+
+
+
+
+
+
+
+Donation Page Components
+1️⃣ Donation Hero / Header
+
+Title: “Support Evergreen”
+
+Short message: “Aapka har donation ek naya ped banata hai”
+
+2️⃣ Donation Form Section (Main Component)
+
+Isme hota hai:
+
+Name
+
+Email / Phone
+
+Donation Amount
+
+Custom Amount
+
+Payment Method (UPI/Card/Netbanking)
+
+Donate Button
+
+3️⃣ Why Donate Section
+
+2–3 lines me reason
+
+“100% transparent tracking”
+
+“Verified plantation locations”
+
+4️⃣ Impact Preview Section (Optional but recommended)
+
+Kitne rupees = kitne ped
+
+Small stats
+
+5️⃣ Trust Badges / Secure Payment Strip
+
+SSL secure
+
+Verified trust logos
+
+Safe donation info
+
+
+
+
+
+
+Donation Success Page Components
+1️⃣ Success Hero / Banner
+
+Big heading: “Thank You!”
+
+Short message: “Aapka donation successful ho gaya hai”
+
+Green tick / success icon
+
+2️⃣ Donation Summary Section
+
+Name of donor (agar available ho)
+
+Amount donated
+
+Number of trees planted with this donation
+
+Transaction ID / Receipt (optional)
+
+3️⃣ What’s Next Section
+
+“We will notify you when the tree is planted”
+
+“Track your tree plantation” button
+
+4️⃣ Call to Action / Explore More
+
+“Donate Again” button
+
+“Share with friends” button (social share)
+
+
+
+
+🌿 Trees Overview Page – Components
+1️⃣ Overview Hero / Stats Section
+
+Big heading: “Our Green Impact”
+
+Total Trees Planted
+
+Total Fund Raised
+
+Pending Trees
+
+2️⃣ Trees Breakdown Section
+
+Planted Trees: Number + recent locations
+
+Pending Trees: Number + upcoming locations
+
+3️⃣ Map / Locations Section (Optional)
+
+Map ya list showing plantation sites
+
+Color-coded pins: planted / pending
+
+4️⃣ Call to Action / Donate Again
+
+“Plant More Trees” button
+
+Link to Donate Page
+
+
+🌿 Planted Trees Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Planted Trees”
+
+Short subtitle: “Dekhiye kaunse trees humne kaha lagaye”
+
+2️⃣ Trees List / Table
+
+Tree Name / Type
+
+Plantation Date
+
+Location / City
+
+Number of Trees planted
+
+Optional: Tree images / thumbnails
+
+3️⃣ Filters / Search (Optional)
+
+Filter by Location / Date / Tree Type
+
+Search bar to quickly find planted trees
+
+4️⃣ Map Section (Optional but Recommended)
+
+Map with pins showing locations of planted trees
+
+Hover on pin shows tree type & date
+
+
+
+🌿 Pending Trees Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Pending Tree Plantations”
+
+Short subtitle: “Abhi ye trees lagane baki hain”
+
+2️⃣ Pending Trees List / Table
+
+Tree Name / Type
+
+Planned Plantation Date
+
+Location / City
+
+Number of Trees
+
+Status / Notes (Optional)
+
+3️⃣ Filters / Search (Optional)
+
+Filter by Location / Date / Tree Type
+
+Search bar for easy navigation
+
+4️⃣ Call to Action / Volunteer / Donate
+
+“Help Plant Now” button
+
+Link to Donate Page
+
+Optional: Volunteer signup link
+
+
+
+
+
+🌿 Locations Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Plantation Locations”
+
+Subtitle: “Dekhiye kaunse shehron aur gaon me ped lagaye ya plan kiye gaye hain”
+
+2️⃣ Map Section
+
+Interactive map showing plantation sites
+
+Pins / markers for each location
+
+Hover / click shows:
+
+Number of trees
+
+Plantation status (Planted / Pending)
+
+Tree type
+
+3️⃣ Locations List / Cards
+
+List ya card view of locations
+
+Each card shows:
+
+Location name
+
+Total trees planted
+
+Pending trees
+
+Optional: Small image
+
+4️⃣ Filters / Search (Optional)
+
+Filter by Status (Planted / Pending)
+
+Filter by City / Region
+
+Search bar for easy navigation
+
+
+🌿 Finances Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Financial Overview”
+
+Subtitle: “Dekhiye ab tak kitna fund collect hua hai aur kaise use kiya ja raha hai”
+
+2️⃣ Total Funds / Stats Section
+
+Total Fund Raised
+
+Total Donations
+
+Total Trees Funded
+
+Optional: Small visual stats (icons / badges)
+
+3️⃣ Fund Breakdown Section
+
+Graphs / Charts showing:
+
+Monthly / Yearly donations
+
+Fund allocation (Tree plantation, Admin, Misc)
+
+4️⃣ Call to Action (Optional)
+
+“Donate Now” button
+
+“View Detailed Reports” button linking to finances/reports/page.js
+
+
+
+1️⃣ Page Header / Hero
+
+Title: “Detailed Financial Reports”
+
+Subtitle: “Ab tak ke donations aur fund allocation ka detail overview”
+
+2️⃣ Reports Filters / Controls
+
+Filter by:
+
+Month / Year
+
+Donation type
+
+Fund usage category
+
+Search bar for specific report
+
+3️⃣ Reports Table / List
+
+Columns:
+
+Date
+
+Donor Name (Optional)
+
+Donation Amount
+
+Fund Category / Usage
+
+Transaction ID / Receipt
+
+4️⃣ Charts / Graphs (Optional)
+
+Bar chart / Pie chart showing fund distribution
+
+Monthly donation trends
+
+5️⃣ Export / Download Options (Optional)
+
+“Download PDF” / “Export CSV” buttons
+
+
+🌿 Volunteers Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Join Our Volunteers”
+
+Subtitle: “Aap bhi Evergreen ke saath ped lagane me madad kar sakte hain”
+
+2️⃣ Volunteer Registration Form
+
+Name
+
+Email / Phone
+
+City / Location
+
+Availability / Preferred Tasks
+
+Submit Button
+
+3️⃣ Volunteer Benefits / Info Section
+
+Short points:
+
+“Be part of a green mission”
+
+“Track the trees you plant”
+
+“Certificates / Recognition”
+
+4️⃣ Volunteer Testimonials / Stories (Optional)
+
+Photos & short stories of existing volunteers
+
+Builds trust & encourages signup
+
+5️⃣ CTA Section (Optional)
+
+“Sign Up Now” button repeated
+
+Social sharing links
+
+
+
+🌿 Contact Page – Components
+1️⃣ Page Header / Hero
+
+Title: “Get in Touch”
+
+Subtitle: “Humse contact karein, questions ya suggestions ke liye”
+
+2️⃣ Contact Form
+
+Name
+
+Email
+
+Subject
+
+Message
+
+Submit Button
+
+3️⃣ Contact Details / Info Section
+
+Email: info@evergreen.org
+
+Phone: +91 XXXXX XXXXX
+
+Address: NGO office location
+
+Optional: Office timings
+
+4️⃣ Map Section (Optional)
+
+Embedded Google Map showing NGO location
+
+5️⃣ Social Media Links / CTA (Optional)
+
+Facebook, Instagram, Twitter links
+
+“Follow Us” / “Connect”
