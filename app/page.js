@@ -1,11 +1,11 @@
 "use client";
 
-import { 
-  Trees, 
-  Droplets, 
-  Users, 
-  MapPin, 
-  ArrowRight, 
+import {
+  Trees,
+  Droplets,
+  Users,
+  MapPin,
+  ArrowRight,
   CheckCircle,
   Star,
   Leaf,
@@ -92,7 +92,7 @@ import {
   ShoppingCart,
   Store,
   Building,
-Trophy 
+  Trophy
 } from 'lucide-react';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -155,12 +155,12 @@ export default function HomePage() {
       { id: 8, name: "Dr. Ali Hassan", amount: 100000, date: "2024-01-09T09:45:00Z", trees: 200, type: "individual", city: "Islamabad", anonymous: false }
     ],
     featuredLocations: [
-      { 
-        id: 1, 
-        name: "Margalla Hills National Park", 
-        trees: 150_000, 
-        status: "active", 
-        type: "forest", 
+      {
+        id: 1,
+        name: "Margalla Hills National Park",
+        trees: 150_000,
+        status: "active",
+        type: "forest",
         province: "Punjab",
         coordinates: "33.6844° N, 73.0479° E",
         startDate: "2018-03-15",
@@ -170,12 +170,12 @@ export default function HomePage() {
         volunteers: 2500,
         impact: "Reduced soil erosion by 60%, increased biodiversity by 40%"
       },
-      { 
-        id: 2, 
-        name: "Changa Manga Forest", 
-        trees: 250_000, 
-        status: "active", 
-        type: "forest", 
+      {
+        id: 2,
+        name: "Changa Manga Forest",
+        trees: 250_000,
+        status: "active",
+        type: "forest",
         province: "Punjab",
         coordinates: "31.0833° N, 73.9167° E",
         startDate: "2017-06-01",
@@ -185,12 +185,12 @@ export default function HomePage() {
         volunteers: 3500,
         impact: "Revived one of Asia's largest man-made forests"
       },
-      { 
-        id: 3, 
-        name: "Karachi Coastal Mangroves", 
-        trees: 80_000, 
-        status: "active", 
-        type: "mangrove", 
+      {
+        id: 3,
+        name: "Karachi Coastal Mangroves",
+        trees: 80_000,
+        status: "active",
+        type: "mangrove",
         province: "Sindh",
         coordinates: "24.8607° N, 67.0011° E",
         startDate: "2019-08-20",
@@ -200,12 +200,12 @@ export default function HomePage() {
         volunteers: 1800,
         impact: "Protected 15km coastline, increased marine life by 35%"
       },
-      { 
-        id: 4, 
-        name: "Lahore Urban Green Belt", 
-        trees: 120_000, 
-        status: "active", 
-        type: "urban", 
+      {
+        id: 4,
+        name: "Lahore Urban Green Belt",
+        trees: 120_000,
+        status: "active",
+        type: "urban",
         province: "Punjab",
         coordinates: "31.5497° N, 74.3436° E",
         startDate: "2020-01-10",
@@ -215,12 +215,12 @@ export default function HomePage() {
         volunteers: 4200,
         impact: "Reduced urban heat island effect by 2°C"
       },
-      { 
-        id: 5, 
-        name: "Swat Valley Reforestation", 
-        trees: 180_000, 
-        status: "planned", 
-        type: "forest", 
+      {
+        id: 5,
+        name: "Swat Valley Reforestation",
+        trees: 180_000,
+        status: "planned",
+        type: "forest",
         province: "KPK",
         coordinates: "35.2251° N, 72.4251° E",
         startDate: "2024-03-01",
@@ -230,12 +230,12 @@ export default function HomePage() {
         volunteers: 0,
         impact: "Expected to restore 5000 hectares of degraded forest"
       },
-      { 
-        id: 6, 
-        name: "Thar Desert Greening", 
-        trees: 50_000, 
-        status: "active", 
-        type: "desert", 
+      {
+        id: 6,
+        name: "Thar Desert Greening",
+        trees: 50_000,
+        status: "active",
+        type: "desert",
         province: "Sindh",
         coordinates: "24.5775° N, 70.8206° E",
         startDate: "2021-07-15",
@@ -247,67 +247,67 @@ export default function HomePage() {
       }
     ],
     testimonials: [
-      { 
-        id: 1, 
-        name: "Ali Hassan", 
-        role: "Regular Donor for 3 years", 
+      {
+        id: 1,
+        name: "Ali Hassan",
+        role: "Regular Donor for 3 years",
         city: "Karachi",
-        content: "I've been donating to GreenEarth for 3 years now. The transparency and regular updates are exceptional. I receive monthly reports with photos and GPS coordinates of my trees. This level of accountability is rare and deeply appreciated.", 
+        content: "I've been donating to GreenEarth for 3 years now. The transparency and regular updates are exceptional. I receive monthly reports with photos and GPS coordinates of my trees. This level of accountability is rare and deeply appreciated.",
         rating: 5,
         donationAmount: 25000,
         treesDonated: 50,
         date: "2024-01-10"
       },
-      { 
-        id: 2, 
-        name: "Dr. Sarah Ahmed", 
-        role: "Environmental Scientist", 
+      {
+        id: 2,
+        name: "Dr. Sarah Ahmed",
+        role: "Environmental Scientist",
         city: "Islamabad",
-        content: "As an environmental scientist, I'm particular about where I contribute. GreenEarth's scientific approach to plantation, species selection, and maintenance is impressive. Their urban forestry projects are making a measurable difference in air quality.", 
+        content: "As an environmental scientist, I'm particular about where I contribute. GreenEarth's scientific approach to plantation, species selection, and maintenance is impressive. Their urban forestry projects are making a measurable difference in air quality.",
         rating: 5,
         donationAmount: 50000,
         treesDonated: 100,
         date: "2024-01-05"
       },
-      { 
-        id: 3, 
-        name: "Rizwan Malik", 
-        role: "CSR Head - Tech Solutions Ltd.", 
+      {
+        id: 3,
+        name: "Rizwan Malik",
+        role: "CSR Head - Tech Solutions Ltd.",
         city: "Lahore",
-        content: "Our company partnered with GreenEarth for our CSR initiatives. The professionalism, execution, and reporting exceeded our expectations. We've planted 2000 trees through them and will continue our partnership. Their impact measurement is top-notch.", 
+        content: "Our company partnered with GreenEarth for our CSR initiatives. The professionalism, execution, and reporting exceeded our expectations. We've planted 2000 trees through them and will continue our partnership. Their impact measurement is top-notch.",
         rating: 4,
         donationAmount: 1000000,
         treesDonated: 2000,
         date: "2024-01-12"
       },
-      { 
-        id: 4, 
-        name: "Ayesha Bibi", 
-        role: "Local Volunteer & Community Leader", 
+      {
+        id: 4,
+        name: "Ayesha Bibi",
+        role: "Local Volunteer & Community Leader",
         city: "Swat",
-        content: "Volunteering with GreenEarth changed my life and my community. They don't just plant trees; they train locals, provide employment, and ensure long-term sustainability. Our valley is greener, and our children have a better future.", 
+        content: "Volunteering with GreenEarth changed my life and my community. They don't just plant trees; they train locals, provide employment, and ensure long-term sustainability. Our valley is greener, and our children have a better future.",
         rating: 5,
         donationAmount: 0,
         treesDonated: 500,
         date: "2024-01-08"
       },
-      { 
-        id: 5, 
-        name: "Major (R) Tariq Mahmood", 
-        role: "Retired Army Officer", 
+      {
+        id: 5,
+        name: "Major (R) Tariq Mahmood",
+        role: "Retired Army Officer",
         city: "Rawalpindi",
-        content: "I've dedicated my retirement to environmental causes. GreenEarth is the most organized NGO I've worked with. Their military-like precision in planning and execution is remarkable. Every rupee is accounted for.", 
+        content: "I've dedicated my retirement to environmental causes. GreenEarth is the most organized NGO I've worked with. Their military-like precision in planning and execution is remarkable. Every rupee is accounted for.",
         rating: 5,
         donationAmount: 100000,
         treesDonated: 200,
         date: "2024-01-03"
       },
-      { 
-        id: 6, 
-        name: "Maria Khan", 
-        role: "University Student", 
+      {
+        id: 6,
+        name: "Maria Khan",
+        role: "University Student",
         city: "Peshawar",
-        content: "As part of my university's environmental club, we volunteer with GreenEarth. Their training programs are excellent, and they make complex environmental concepts accessible. I've learned so much while making a real impact.", 
+        content: "As part of my university's environmental club, we volunteer with GreenEarth. Their training programs are excellent, and they make complex environmental concepts accessible. I've learned so much while making a real impact.",
         rating: 5,
         donationAmount: 5000,
         treesDonated: 10,
@@ -315,9 +315,9 @@ export default function HomePage() {
       }
     ],
     howItWorks: [
-      { 
-        step: 1, 
-        title: "Select Contribution Method", 
+      {
+        step: 1,
+        title: "Select Contribution Method",
         desc: "Choose between one-time donation, monthly subscription, corporate partnership, or volunteer registration. Select the number of trees or specific amount you wish to contribute.",
         icon: "target",
         details: [
@@ -327,9 +327,9 @@ export default function HomePage() {
           "Gift trees option available"
         ]
       },
-      { 
-        step: 2, 
-        title: "Site Selection & Planning", 
+      {
+        step: 2,
+        title: "Site Selection & Planning",
         desc: "Our experts select appropriate locations based on soil analysis, climate conditions, and community needs. We choose native species suitable for each ecosystem.",
         icon: "map",
         details: [
@@ -339,9 +339,9 @@ export default function HomePage() {
           "Community consultation"
         ]
       },
-      { 
-        step: 3, 
-        title: "Plantation & Documentation", 
+      {
+        step: 3,
+        title: "Plantation & Documentation",
         desc: "Trained volunteers and local community members plant trees under expert supervision. Each tree is geotagged and photographed for documentation.",
         icon: "trees",
         details: [
@@ -351,9 +351,9 @@ export default function HomePage() {
           "Unique tree ID assignment"
         ]
       },
-      { 
-        step: 4, 
-        title: "Nurturing & Maintenance", 
+      {
+        step: 4,
+        title: "Nurturing & Maintenance",
         desc: "Regular watering, weeding, and protection for first 3 years. Local caretakers are trained and employed for ongoing maintenance.",
         icon: "droplets",
         details: [
@@ -363,9 +363,9 @@ export default function HomePage() {
           "Protection from grazing"
         ]
       },
-      { 
-        step: 5, 
-        title: "Monitoring & Reporting", 
+      {
+        step: 5,
+        title: "Monitoring & Reporting",
         desc: "Monthly progress updates with photos, growth measurements, and impact metrics. Annual comprehensive reports on survival rates and environmental impact.",
         icon: "trending",
         details: [
@@ -375,9 +375,9 @@ export default function HomePage() {
           "Environmental impact metrics"
         ]
       },
-      { 
-        step: 6, 
-        title: "Impact Assessment & Community Development", 
+      {
+        step: 6,
+        title: "Impact Assessment & Community Development",
         desc: "Annual assessment of environmental and social impact. Community development programs and livelihood opportunities creation.",
         icon: "report",
         details: [
@@ -472,7 +472,7 @@ export default function HomePage() {
 
 
 
-  {/* Hero Banner Component */}
+  {/* Hero Banner Component */ }
   const HeroBanner = () => (
     <div className="relative bg-gradient-to-br from-green-900 via-emerald-800 to-teal-900 text-white overflow-hidden">
       {/* Animated background elements */}
@@ -481,7 +481,7 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-8 left-20 w-64 h-64 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
-      
+
       {/* Floating leaves */}
       <div className="absolute top-10 left-10 animate-float">
         <Leaf className="h-8 w-8 text-green-300 opacity-50" />
@@ -492,7 +492,7 @@ export default function HomePage() {
       <div className="absolute bottom-20 left-1/4 animate-float animation-delay-2000">
         <Leaf className="h-10 w-10 text-teal-300 opacity-30" />
       </div>
-      
+
       <div className="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -500,35 +500,35 @@ export default function HomePage() {
               <Star className="h-5 w-5 text-yellow-300" />
               <span className="text-sm font-medium">Trusted by 25,000+ Pakistanis</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Plant Trees.
               <span className="block text-yellow-300 mt-2">Save Pakistan.</span>
               <span className="block text-green-200 text-3xl md:text-4xl mt-4">One Tree at a Time</span>
             </h1>
-            
+
             <p className="text-xl text-green-100 mb-8 max-w-2xl">
-              Join Pakistan's largest community-driven tree plantation movement. 
+              Join Pakistan's largest community-driven tree plantation movement.
               Every tree you plant fights climate change, creates jobs, and secures our children's future.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link 
-                href="/donate" 
+              <Link
+                href="/donate"
                 className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <Heart className="h-6 w-6" />
                 <span>Plant Your Tree Now</span>
                 <ArrowRight className="h-6 w-6" />
               </Link>
-              <Link 
-                href="/volunteers" 
+              <Link
+                href="/volunteers"
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 border-2 border-white/30"
               >
                 Join as Volunteer
               </Link>
             </div>
-            
+
             <div className="flex items-center space-x-6 text-sm">
               <div className="flex items-center space-x-2">
                 <ShieldCheck className="h-5 w-5 text-green-300" />
@@ -544,11 +544,11 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold mb-6 text-center">Quick Plantation</h3>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium mb-2">Select Number of Trees</label>
                 <div className="grid grid-cols-3 gap-3">
@@ -566,7 +566,7 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium mb-2">Or Enter Custom Amount</label>
                 <div className="relative">
@@ -585,7 +585,7 @@ export default function HomePage() {
                   />
                 </div>
               </div>
-              
+
               <div className="bg-white/5 rounded-xl p-4 mb-6">
                 <div className="flex justify-between mb-2">
                   <span>Trees to Plant:</span>
@@ -600,16 +600,16 @@ export default function HomePage() {
                   <span className="font-bold text-yellow-300">PKR {donationAmount.toLocaleString()}</span>
                 </div>
               </div>
-              
+
               <button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
                 Continue to Plant
               </button>
-              
+
               <p className="text-center text-sm text-green-200 mt-4">
                 Secure payment • Tax deductible • Certificate provided
               </p>
             </div>
-            
+
             {/* Floating stats */}
             <div className="absolute -bottom-6 -left-6 bg-white text-gray-900 rounded-xl p-4 shadow-2xl">
               <div className="text-2xl font-bold text-green-600">1.25M+</div>
@@ -622,7 +622,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      
+
       {/* Wave divider */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg className="w-full h-20 text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -634,7 +634,7 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Real-time Statistics Component */}
+  {/* Real-time Statistics Component */ }
   const RealTimeStats = () => (
     <div className="bg-gradient-to-r from-gray-50 to-white py-12 -mt-1">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -657,7 +657,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100">
               <div className="flex items-center justify-between mb-2">
@@ -672,14 +672,14 @@ export default function HomePage() {
               <div className="text-gray-600 text-sm">Trees Planted</div>
               <div className="mt-2">
                 <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-green-500 rounded-full"
                     style={{ width: '75%' }}
                   ></div>
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-100">
               <div className="flex items-center justify-between mb-2">
                 <Heart className="h-8 w-8 text-blue-600" />
@@ -693,14 +693,14 @@ export default function HomePage() {
               <div className="text-gray-600 text-sm">Donations Received</div>
               <div className="mt-2">
                 <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-blue-500 rounded-full"
                     style={{ width: '60%' }}
                   ></div>
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
               <div className="flex items-center justify-between mb-2">
                 <Users className="h-8 w-8 text-orange-600" />
@@ -714,14 +714,14 @@ export default function HomePage() {
               <div className="text-gray-600 text-sm">Active Volunteers</div>
               <div className="mt-2">
                 <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-orange-500 rounded-full"
                     style={{ width: '85%' }}
                   ></div>
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 border border-purple-100">
               <div className="flex items-center justify-between mb-2">
                 <MapPin className="h-8 w-8 text-purple-600" />
@@ -735,7 +735,7 @@ export default function HomePage() {
               <div className="text-gray-600 text-sm">Ongoing Plantations</div>
               <div className="mt-2">
                 <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-purple-500 rounded-full"
                     style={{ width: '90%' }}
                   ></div>
@@ -743,7 +743,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           {/* Overall Progress */}
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 mb-6">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -755,7 +755,7 @@ export default function HomePage() {
                 <span>{data.statistics.totalTreesTarget.toLocaleString()} target</span>
               </div>
               <div className="h-4 bg-gray-300 rounded-full overflow-hidden">
-                <div 
+                <div
                   className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"
                   style={{ width: `${(data.statistics.totalTrees / data.statistics.totalTreesTarget) * 100}%` }}
                 ></div>
@@ -764,7 +764,7 @@ export default function HomePage() {
                 {((data.statistics.totalTrees / data.statistics.totalTreesTarget) * 100).toFixed(1)}% Complete
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
                 <div className="text-2xl font-bold text-green-600">{data.statistics.treesThisMonth.toLocaleString()}</div>
@@ -780,10 +780,10 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex justify-center">
-            <Link 
-              href="/trees" 
+            <Link
+              href="/trees"
               className="inline-flex items-center text-green-700 hover:text-green-800 font-semibold text-lg"
             >
               View Detailed Analytics Dashboard
@@ -795,19 +795,19 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Environmental Impact Calculator Component */}
+  {/* Environmental Impact Calculator Component */ }
   const ImpactCalculator = () => {
     const [customTrees, setCustomTrees] = useState(10);
-    
+
     const calculateImpact = (trees) => ({
       co2: trees * data.environmentalImpact.co2AbsorbedPerTree,
       oxygen: trees * data.environmentalImpact.oxygenProducedPerTree,
       water: trees * data.environmentalImpact.waterFilteredPerTree,
       equivalent: (trees * data.environmentalImpact.co2AbsorbedPerTree) / 1000
     });
-    
+
     const impact = calculateImpact(customTrees);
-    
+
     return (
       <div className="py-16 bg-gradient-to-b from-white to-green-50">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -819,19 +819,19 @@ export default function HomePage() {
               See the difference your trees will make in fighting climate change
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Your Impact Calculator
               </h3>
-              
+
               <div className="mb-8">
                 <label className="block text-sm font-medium text-gray-700 mb-4">
                   How many trees would you like to plant?
                 </label>
                 <div className="flex items-center space-x-4 mb-6">
-                  <button 
+                  <button
                     onClick={() => setCustomTrees(Math.max(1, customTrees - 1))}
                     className="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full"
                   >
@@ -847,14 +847,14 @@ export default function HomePage() {
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                     />
                   </div>
-                  <button 
+                  <button
                     onClick={() => setCustomTrees(customTrees + 1)}
                     className="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full"
                   >
                     <Plus className="h-5 w-5" />
                   </button>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="text-5xl font-bold text-green-600 mb-2">{customTrees}</div>
                   <div className="text-gray-600">Trees Selected</div>
@@ -863,7 +863,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[1, 5, 10, 50, 100, 500].map((count) => (
                   <button
@@ -875,15 +875,15 @@ export default function HomePage() {
                   </button>
                 ))}
               </div>
-              
+
               <button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
                 Plant {customTrees} Tree{customTrees > 1 ? 's' : ''} Now
               </button>
             </div>
-            
+
             <div className="bg-gradient-to-br from-green-900 to-emerald-800 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Your Annual Environmental Impact</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center justify-between p-4 bg-white/10 rounded-xl">
                   <div className="flex items-center space-x-4">
@@ -898,7 +898,7 @@ export default function HomePage() {
                     <div className="text-xl font-bold">{impact.equivalent.toFixed(1)} tons</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between p-4 bg-white/10 rounded-xl">
                   <div className="flex items-center space-x-4">
                     <Wind className="h-10 w-10 text-green-300" />
@@ -912,7 +912,7 @@ export default function HomePage() {
                     <div className="text-xl font-bold">{Math.floor(impact.oxygen / 550)} people/year</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between p-4 bg-white/10 rounded-xl">
                   <div className="flex items-center space-x-4">
                     <Droplets className="h-10 w-10 text-green-300" />
@@ -926,7 +926,7 @@ export default function HomePage() {
                     <div className="text-xl font-bold">{Math.floor(impact.water / 150)} families</div>
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 bg-white/10 rounded-xl">
                     <ThermometerSun className="h-8 w-8 text-yellow-300 mb-2" />
@@ -939,7 +939,7 @@ export default function HomePage() {
                     <div className="text-green-200">Increased by {customTrees * 0.5}% locally</div>
                   </div>
                 </div>
-                
+
                 <div className="text-center text-green-200">
                   <div className="text-sm">Based on 20-year lifespan of each tree</div>
                   <div className="text-xs opacity-75 mt-1">*Calculations based on scientific research</div>
@@ -947,12 +947,12 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-12 text-center">
             <div className="inline-flex items-center space-x-2 bg-green-100 text-green-800 px-6 py-3 rounded-full">
               <Info className="h-5 w-5" />
               <span>
-                <span className="font-bold">{data.statistics.totalTrees.toLocaleString()}</span> trees already planted are absorbing 
+                <span className="font-bold">{data.statistics.totalTrees.toLocaleString()}</span> trees already planted are absorbing
                 <span className="font-bold"> {Math.floor(data.statistics.co2Absorbed / 1000).toLocaleString()} tons</span> of CO₂ annually
               </span>
             </div>
@@ -962,7 +962,7 @@ export default function HomePage() {
     );
   };
 
-  {/* How It Works Process Component */}
+  {/* How It Works Process Component */ }
   const ProcessSection = () => (
     <div className="py-16 bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -974,15 +974,15 @@ export default function HomePage() {
             From donation to flourishing forest - see how we ensure every tree thrives
           </p>
         </div>
-        
+
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-green-500 to-emerald-500 hidden lg:block"></div>
-          
+
           <div className="space-y-12 lg:space-y-0">
             {data.howItWorks.map((step, index) => (
-              <div 
-                key={step.step} 
+              <div
+                key={step.step}
                 className={`relative flex flex-col lg:flex-row items-center ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 {/* Content */}
@@ -1000,9 +1000,9 @@ export default function HomePage() {
                         </div>
                       </div>
                     </div>
-                    
+
                     <p className="text-gray-600 mb-6">{step.desc}</p>
-                    
+
                     <div className="space-y-3">
                       {step.details.map((detail, idx) => (
                         <div key={idx} className="flex items-start space-x-3">
@@ -1011,7 +1011,7 @@ export default function HomePage() {
                         </div>
                       ))}
                     </div>
-                    
+
                     {step.step === 3 && (
                       <div className="mt-6 bg-green-50 rounded-lg p-4">
                         <div className="flex items-center space-x-2 text-green-700">
@@ -1023,7 +1023,7 @@ export default function HomePage() {
                         </p>
                       </div>
                     )}
-                    
+
                     {step.step === 6 && (
                       <div className="mt-6 bg-blue-50 rounded-lg p-4">
                         <div className="flex items-center space-x-2 text-blue-700">
@@ -1037,12 +1037,12 @@ export default function HomePage() {
                     )}
                   </div>
                 </div>
-                
+
                 {/* Timeline node */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-white border-4 border-green-500 rounded-full flex items-center justify-center z-10 hidden lg:flex">
                   <div className="w-6 h-6 bg-green-500 rounded-full"></div>
                 </div>
-                
+
                 {/* Icon on mobile */}
                 <div className="lg:hidden mt-6 mb-4">
                   <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
@@ -1053,7 +1053,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        
+
         <div className="mt-16 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -1091,10 +1091,10 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Featured Locations Component */}
+  {/* Featured Locations Component */ }
   const FeaturedLocations = () => {
     const [selectedLocation, setSelectedLocation] = useState(data.featuredLocations[0]);
-    
+
     return (
       <div className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1107,15 +1107,15 @@ export default function HomePage() {
                 From the mountains of the north to the coasts of the south, we're planting trees nationwide
               </p>
             </div>
-            <Link 
-              href="/trees/locations" 
+            <Link
+              href="/trees/locations"
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 mt-4 lg:mt-0"
             >
               <Map className="h-5 w-5 mr-2" />
               View All 78 Locations
             </Link>
           </div>
-          
+
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             <div className="lg:col-span-2">
               <div className="bg-gradient-to-br from-green-900 to-emerald-800 rounded-2xl overflow-hidden shadow-2xl">
@@ -1127,7 +1127,7 @@ export default function HomePage() {
                       <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-2 border-white/30 rounded-lg"></div>
                       {/* Location markers */}
                       {data.featuredLocations.slice(0, 4).map((loc, idx) => (
-                        <div 
+                        <div
                           key={loc.id}
                           className={`absolute ${idx === 0 ? 'top-1/3 left-1/3' : idx === 1 ? 'top-2/3 left-1/2' : idx === 2 ? 'top-3/4 left-1/4' : 'top-1/2 left-2/3'} w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse`}
                         >
@@ -1146,7 +1146,7 @@ export default function HomePage() {
                       {selectedLocation.status === 'active' ? 'Active Plantation' : 'Planned'}
                     </span>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                     <div className="bg-white/10 rounded-lg p-4">
                       <div className="text-2xl font-bold text-white">{selectedLocation.trees.toLocaleString()}</div>
@@ -1165,7 +1165,7 @@ export default function HomePage() {
                       <div className="text-green-200 text-sm">Species</div>
                     </div>
                   </div>
-                  
+
                   <div className="text-green-200">
                     <div className="font-medium mb-2">Impact:</div>
                     <p className="text-sm opacity-90">{selectedLocation.impact}</p>
@@ -1173,7 +1173,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-4">
               {data.featuredLocations.map((location) => (
                 <button
@@ -1195,7 +1195,7 @@ export default function HomePage() {
                     <span className="text-green-700 font-semibold">{location.trees.toLocaleString()} trees</span>
                     <div className="flex items-center">
                       <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div 
+                        <div
                           className="h-full bg-green-500 rounded-full"
                           style={{ width: `${location.completion}%` }}
                         ></div>
@@ -1207,7 +1207,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          
+
           {/* Province-wise Distribution */}
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Province-wise Distribution</h3>
@@ -1234,7 +1234,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          
+
           {/* Species Distribution */}
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6">
@@ -1249,7 +1249,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {data.speciesPlanted.map((species) => (
                 <div key={species.name} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -1277,7 +1277,7 @@ export default function HomePage() {
     );
   };
 
-  {/* Testimonials Component */}
+  {/* Testimonials Component */ }
   const TestimonialsSection = () => (
     <div className="py-16 bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1289,7 +1289,7 @@ export default function HomePage() {
             Stories from donors, volunteers, and partners who are making a difference with us
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {data.testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -1313,12 +1313,12 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex items-center mb-4">
                 <div className="flex text-yellow-500">
                   {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
+                    <Star
+                      key={i}
                       className={`h-5 w-5 ${i < testimonial.rating ? 'fill-yellow-500' : 'fill-gray-200'}`}
                     />
                   ))}
@@ -1327,9 +1327,9 @@ export default function HomePage() {
                   {new Date(testimonial.date).toLocaleDateString('en-PK', { dateStyle: 'medium' })}
                 </span>
               </div>
-              
+
               <p className="text-gray-700 italic mb-6">"{testimonial.content}"</p>
-              
+
               <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <button className="flex items-center space-x-2 text-gray-600 hover:text-green-600">
                   <ThumbsUp className="h-4 w-4" />
@@ -1347,7 +1347,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        
+
         {/* Corporate Testimonials */}
         <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">Corporate Partners Speak</h3>
@@ -1369,7 +1369,7 @@ export default function HomePage() {
                 <span className="font-semibold">2,000+ trees planted</span> • Annual Reports • Employee Engagement
               </div>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <div className="bg-green-100 text-green-800 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">
@@ -1389,10 +1389,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        
+
         <div className="text-center">
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className="inline-flex items-center bg-white border-2 border-green-600 text-green-700 hover:bg-green-50 font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
           >
             <MessageCircle className="h-5 w-5 mr-2" />
@@ -1403,83 +1403,126 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Financial Transparency Component */}
-  const FinancialTransparency = () => (
-    <div className="py-16 bg-gray-50">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Financial Transparency
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We believe in complete financial transparency. Every rupee is accounted for and publicly reported.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-          <div className="md:col-span-2 lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Fund Allocation</h3>
+  {/* Financial Transparency Component */ }
 
-              <div className="space-y-4 lg:space-y-6">
-                {Object.entries(data.financialTransparency.allocation).map(([category, percentage]) => (
-                  <div key={category}>
-                    <div className="flex justify-between text-sm text-gray-600 mb-2">
-                      <span className="font-medium capitalize">{category.replace(/([A-Z])/g, ' $1')}</span>
-                      <span>{percentage}%</span>
-                    </div>
-                    <div className="h-3 lg:h-4 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full ${
-                          category === 'plantation' ? 'bg-green-500' :
-                          category === 'communityDevelopment' ? 'bg-blue-500' :
-                          category === 'administration' ? 'bg-yellow-500' :
-                          category === 'fundraising' ? 'bg-purple-500' : 'bg-teal-500'
-                        }`}
-                        style={{ width: `${percentage}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+  const FinancialTransparency = () => {
+    return (
+      <div className="py-12 sm:py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-              <div className="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-gray-200">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-                  <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-gray-900">PKR {data.statistics.totalFunds.toLocaleString()}</div>
-                    <div className="text-sm lg:text-base text-gray-600">Total Funds Received</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl lg:text-3xl font-bold text-green-600">PKR {(data.statistics.totalFunds * 0.65).toLocaleString()}</div>
-                    <div className="text-sm lg:text-base text-gray-600">Directly to Plantation</div>
+          {/* Header */}
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              Financial Transparency
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+              We believe in complete financial transparency. Every rupee is accounted
+              for and publicly reported.
+            </p>
+          </div>
+
+          {/* Top Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+            {/* Fund Allocation */}
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+                  Fund Allocation
+                </h3>
+
+                <div className="space-y-6">
+                  {Object.entries(
+                    data.financialTransparency.allocation
+                  ).map(([category, percentage]) => (
+                    <div key={category}>
+                      <div className="flex justify-between text-sm text-gray-600 mb-2">
+                        <span className="font-medium capitalize">
+                          {category.replace(/([A-Z])/g, " $1")}
+                        </span>
+                        <span>{percentage}%</span>
+                      </div>
+                      <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full ${category === "plantation"
+                              ? "bg-green-500"
+                              : category === "communityDevelopment"
+                                ? "bg-blue-500"
+                                : category === "administration"
+                                  ? "bg-yellow-500"
+                                  : category === "fundraising"
+                                    ? "bg-purple-500"
+                                    : "bg-teal-500"
+                            }`}
+                          style={{ width: `${percentage}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Totals */}
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-6">
+                    <div>
+                      <div className="text-2xl sm:text-3xl font-bold text-gray-900">
+                        PKR {data.statistics.totalFunds.toLocaleString()}
+                      </div>
+                      <div className="text-gray-600">Total Funds Received</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl sm:text-3xl font-bold text-green-600">
+                        PKR{" "}
+                        {(data.statistics.totalFunds * 0.65).toLocaleString()}
+                      </div>
+                      <div className="text-gray-600">
+                        Directly to Plantation
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-bold text-gray-900">Audit & Reports</h3>
-                <ShieldCheck className="h-8 w-8 text-green-600" />
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-4 bg-green-50 rounded-lg">
-                  <div>
-                    <div className="font-medium text-gray-900">Annual Audit</div>
-                    <div className="text-sm text-gray-600">{data.financialTransparency.auditFirm}</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-sm text-gray-500">Last Audit</div>
-                    <div className="font-medium">{new Date(data.financialTransparency.lastAuditDate).toLocaleDateString('en-PK', { dateStyle: 'medium' })}</div>
-                  </div>
+
+            {/* Right Column */}
+            <div className="space-y-6">
+
+              {/* Audit */}
+              <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+                    Audit & Reports
+                  </h3>
+                  <ShieldCheck className="h-8 w-8 text-green-600" />
                 </div>
-                
-                <div className="space-y-3">
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-4 bg-green-50 rounded-lg">
+                    <div>
+                      <div className="font-medium text-gray-900">
+                        Annual Audit
+                      </div>
+                      <div className="text-sm text-gray-600">
+                        {data.financialTransparency.auditFirm}
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm text-gray-500">Last Audit</div>
+                      <div className="font-medium">
+                        {new Date(
+                          data.financialTransparency.lastAuditDate
+                        ).toLocaleDateString("en-PK", {
+                          dateStyle: "medium",
+                        })}
+                      </div>
+                    </div>
+                  </div>
+
                   {data.financialTransparency.documents.map((doc, idx) => (
-                    <div key={idx} className="flex items-center justify-between p-3 border border-gray-200 rounded-lg hover:border-green-300 cursor-pointer">
+                    <div
+                      key={idx}
+                      className="flex items-center justify-between p-3 border border-gray-200 rounded-lg hover:border-green-300 cursor-pointer"
+                    >
                       <div className="flex items-center">
                         <FileText className="h-5 w-5 text-gray-400 mr-3" />
                         <span className="text-gray-700">{doc}</span>
@@ -1489,29 +1532,32 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-            </div>
-            
-            <div className="bg-gradient-to-r from-green-600 to-emerald-500 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Cost Breakdown per Tree</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span>Sapling & Planting</span>
-                  <span className="font-bold">PKR 150</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>1-Year Maintenance</span>
-                  <span className="font-bold">PKR 250</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Community Training</span>
-                  <span className="font-bold">PKR 50</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Monitoring & Reporting</span>
-                  <span className="font-bold">PKR 50</span>
-                </div>
-                <div className="border-t border-white/20 pt-3 mt-3">
-                  <div className="flex justify-between font-bold">
+
+              {/* Cost Breakdown */}
+              <div className="bg-gradient-to-r from-green-600 to-emerald-500 rounded-2xl p-6 sm:p-8 text-white">
+                <h3 className="text-lg sm:text-xl font-bold mb-4">
+                  Cost Breakdown per Tree
+                </h3>
+
+                <div className="space-y-3 text-sm sm:text-base">
+                  <div className="flex justify-between">
+                    <span>Sapling & Planting</span>
+                    <span className="font-bold">PKR 150</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>1-Year Maintenance</span>
+                    <span className="font-bold">PKR 250</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Community Training</span>
+                    <span className="font-bold">PKR 50</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Monitoring & Reporting</span>
+                    <span className="font-bold">PKR 50</span>
+                  </div>
+
+                  <div className="border-t border-white/20 pt-3 mt-3 flex justify-between font-bold">
                     <span>Total Cost per Tree</span>
                     <span>PKR 500</span>
                   </div>
@@ -1519,61 +1565,70 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Yearly Financial Performance</h3>
-          
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200 text-sm lg:text-base">
-              <thead>
-                <tr className="bg-gray-50">
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Funds Raised</th>
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Trees Planted</th>
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Plantation Cost</th>
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Admin Cost</th>
-                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Survival Rate</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {[
-                  { year: "2023", funds: 150_450_000, trees: 300_900, plantation: 97_792_500, admin: 15_045_000, survival: 88.2 },
-                  { year: "2022", funds: 112_800_000, trees: 225_600, plantation: 73_320_000, admin: 11_280_000, survival: 86.5 },
-                  { year: "2021", funds: 85_600_000, trees: 171_200, plantation: 55_640_000, admin: 8_560_000, survival: 85.0 },
-                  { year: "2020", funds: 62_300_000, trees: 124_600, plantation: 40_495_000, admin: 6_230_000, survival: 83.8 },
-                  { year: "2019", funds: 41_600_000, trees: 83_200, plantation: 27_040_000, admin: 4_160_000, survival: 82.5 },
-                ].map((row) => (
-                  <tr key={row.year} className="hover:bg-gray-50">
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap font-medium text-gray-900">{row.year}</td>
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">PKR {row.funds.toLocaleString()}</td>
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">{row.trees.toLocaleString()}</td>
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap hidden md:table-cell">PKR {row.plantation.toLocaleString()}</td>
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap hidden md:table-cell">PKR {row.admin.toLocaleString()}</td>
-                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <div className="w-20 lg:w-24 h-2 bg-gray-200 rounded-full overflow-hidden mr-2 lg:mr-3">
-                          <div
-                            className="h-full bg-green-500 rounded-full"
-                            style={{ width: `${row.survival}%` }}
-                          ></div>
-                        </div>
-                        <span className="text-xs lg:text-sm">{row.survival}%</span>
-                      </div>
-                    </td>
+
+          {/* Table */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+              Yearly Financial Performance
+            </h3>
+
+            <div className="overflow-x-auto">
+              <table className="min-w-[900px] divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    {[
+                      "Year",
+                      "Funds Raised",
+                      "Trees Planted",
+                      "Plantation Cost",
+                      "Admin Cost",
+                      "Survival Rate",
+                    ].map((h) => (
+                      <th
+                        key={h}
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        {h}
+                      </th>
+                    ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="flex items-center justify-between">
+                </thead>
+
+                <tbody className="divide-y divide-gray-200">
+                  {[
+                    { year: "2023", funds: 150450000, trees: 300900, plantation: 97792500, admin: 15045000, survival: 88.2 },
+                    { year: "2022", funds: 112800000, trees: 225600, plantation: 73320000, admin: 11280000, survival: 86.5 },
+                    { year: "2021", funds: 85600000, trees: 171200, plantation: 55640000, admin: 8560000, survival: 85.0 },
+                  ].map((row) => (
+                    <tr key={row.year} className="hover:bg-gray-50">
+                      <td className="px-6 py-4 font-medium">{row.year}</td>
+                      <td className="px-6 py-4">PKR {row.funds.toLocaleString()}</td>
+                      <td className="px-6 py-4">{row.trees.toLocaleString()}</td>
+                      <td className="px-6 py-4">PKR {row.plantation.toLocaleString()}</td>
+                      <td className="px-6 py-4">PKR {row.admin.toLocaleString()}</td>
+                      <td className="px-6 py-4">
+                        <div className="flex items-center">
+                          <div className="w-24 h-2 bg-gray-200 rounded-full mr-3 overflow-hidden">
+                            <div
+                              className="h-full bg-green-500"
+                              style={{ width: `${row.survival}%` }}
+                            />
+                          </div>
+                          <span>{row.survival}%</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-6 pt-6 border-t flex flex-col sm:flex-row sm:justify-between gap-4">
               <div className="text-gray-600">
-                <FileText className="h-5 w-5 inline mr-2" />
-                Detailed financial statements available for download
+                <FileText className="inline h-5 w-5 mr-2" />
+                Detailed financial statements available
               </div>
-              <button className="flex items-center text-green-700 hover:text-green-800 font-medium">
+              <button className="flex items-center text-green-700 font-medium hover:text-green-800">
                 <Download className="h-5 w-5 mr-2" />
                 Download All Reports
               </button>
@@ -1581,10 +1636,12 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
-  {/* Upcoming Events Component */}
+
+
+  {/* Upcoming Events Component */ }
   const UpcomingEvents = () => (
     <div className="py-16 bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1597,36 +1654,35 @@ export default function HomePage() {
               Join our upcoming events and be part of Pakistan's green transformation
             </p>
           </div>
-          <Link 
-            href="/volunteers" 
+          <Link
+            href="/volunteers"
             className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 mt-4 lg:mt-0"
           >
             <Calendar className="h-5 w-5 mr-2" />
             View Event Calendar
           </Link>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {data.upcomingEvents.map((event) => (
             <div key={event.id} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className={`h-2 ${event.status === 'registration-open' ? 'bg-green-500' : event.status === 'upcoming' ? 'bg-blue-500' : 'bg-yellow-500'}`}></div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    event.status === 'registration-open' ? 'bg-green-100 text-green-800' :
-                    event.status === 'upcoming' ? 'bg-blue-100 text-blue-800' : 'bg-yellow-100 text-yellow-800'
-                  }`}>
-                    {event.status === 'registration-open' ? 'Registration Open' : 
-                     event.status === 'upcoming' ? 'Upcoming' : 'Planning'}
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${event.status === 'registration-open' ? 'bg-green-100 text-green-800' :
+                      event.status === 'upcoming' ? 'bg-blue-100 text-blue-800' : 'bg-yellow-100 text-yellow-800'
+                    }`}>
+                    {event.status === 'registration-open' ? 'Registration Open' :
+                      event.status === 'upcoming' ? 'Upcoming' : 'Planning'}
                   </span>
                   <div className="text-sm text-gray-500">
                     {new Date(event.date).toLocaleDateString('en-PK', { month: 'short', day: 'numeric' })}
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{event.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{event.description}</p>
-                
+
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-sm text-gray-600">
                     <MapPin className="h-4 w-4 mr-2" />
@@ -1641,19 +1697,18 @@ export default function HomePage() {
                     <span>{event.volunteersNeeded.toLocaleString()} volunteers needed</span>
                   </div>
                 </div>
-                
-                <button className={`w-full py-3 rounded-lg font-medium transition-colors ${
-                  event.status === 'registration-open' 
-                    ? 'bg-green-600 hover:bg-green-700 text-white' 
+
+                <button className={`w-full py-3 rounded-lg font-medium transition-colors ${event.status === 'registration-open'
+                    ? 'bg-green-600 hover:bg-green-700 text-white'
                     : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
-                }`}>
+                  }`}>
                   {event.status === 'registration-open' ? 'Register Now' : 'Notify Me'}
                 </button>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-2/3 lg:pr-12">
@@ -1686,7 +1741,7 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Call to Action Component */}
+  {/* Call to Action Component */ }
   const CTASection = () => (
     <div className="relative bg-gradient-to-br from-green-900 via-emerald-800 to-teal-900 text-white overflow-hidden">
       {/* Background pattern */}
@@ -1696,21 +1751,21 @@ export default function HomePage() {
           backgroundSize: '40px'
         }}></div>
       </div>
-      
+
       <div className="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <Leaf className="h-20 w-20 mx-auto mb-8 text-yellow-300" />
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             The Time to Act is
             <span className="block text-yellow-300 mt-2">Now</span>
           </h2>
-          
+
           <p className="text-xl mb-10 max-w-3xl mx-auto opacity-90">
-            Pakistan loses 27,000 hectares of forest every year. 
+            Pakistan loses 27,000 hectares of forest every year.
             Your contribution today helps reverse deforestation and create a sustainable future.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <div className="text-3xl font-bold mb-2">1.25M+</div>
@@ -1725,25 +1780,25 @@ export default function HomePage() {
               <div className="opacity-90">Active Locations</div>
             </div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-10">
-            <Link 
-              href="/donate" 
+            <Link
+              href="/donate"
               className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-gray-900 font-bold py-5 px-12 rounded-lg text-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1"
             >
               <Heart className="h-6 w-6" />
               <span>Plant Your Legacy</span>
               <ArrowRight className="h-6 w-6" />
             </Link>
-            
-            <Link 
-              href="/volunteers" 
+
+            <Link
+              href="/volunteers"
               className="bg-transparent hover:bg-white/10 text-white font-bold py-5 px-12 rounded-lg text-xl transition-all duration-300 border-2 border-white/30 backdrop-blur-sm"
             >
               Join Our Movement
             </Link>
           </div>
-          
+
           <div className="text-sm opacity-75 space-y-2">
             <div>✓ Registered NGO under SECP Pakistan</div>
             <div>✓ Tax-deductible donations under Section 2(36) of Income Tax Ordinance</div>
@@ -1754,17 +1809,17 @@ export default function HomePage() {
     </div>
   );
 
-  {/* Recent Donations Component */}
+  {/* Recent Donations Component */ }
   const RecentDonations = () => {
     const [donationType, setDonationType] = useState('all');
-    
+
     const filteredDonations = data.recentDonations.filter(donation => {
       if (donationType === 'all') return true;
       if (donationType === 'individual') return donation.type === 'individual';
       if (donationType === 'corporate') return donation.type === 'corporate';
       return true;
     });
-    
+
     return (
       <div className="py-16 bg-gray-50">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1777,21 +1832,21 @@ export default function HomePage() {
                 Join thousands of Pakistanis who are making a difference
               </p>
             </div>
-            
+
             <div className="flex space-x-2 mt-4 lg:mt-0">
-              <button 
+              <button
                 onClick={() => setDonationType('all')}
                 className={`px-4 py-2 rounded-lg ${donationType === 'all' ? 'bg-green-600 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
               >
                 All
               </button>
-              <button 
+              <button
                 onClick={() => setDonationType('individual')}
                 className={`px-4 py-2 rounded-lg ${donationType === 'individual' ? 'bg-green-600 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
               >
                 Individuals
               </button>
-              <button 
+              <button
                 onClick={() => setDonationType('corporate')}
                 className={`px-4 py-2 rounded-lg ${donationType === 'corporate' ? 'bg-green-600 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
               >
@@ -1799,7 +1854,7 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
@@ -1817,12 +1872,11 @@ export default function HomePage() {
                     <tr key={donation.id} className="hover:bg-green-50 transition-colors">
                       <td className="px-8 py-5 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className={`rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4 ${
-                            donation.anonymous ? 'bg-gray-200 text-gray-700' :
-                            donation.type === 'corporate' ? 'bg-blue-100 text-blue-800' :
-                            donation.type === 'educational' ? 'bg-purple-100 text-purple-800' :
-                            'bg-green-100 text-green-800'
-                          }`}>
+                          <div className={`rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4 ${donation.anonymous ? 'bg-gray-200 text-gray-700' :
+                              donation.type === 'corporate' ? 'bg-blue-100 text-blue-800' :
+                                donation.type === 'educational' ? 'bg-purple-100 text-purple-800' :
+                                  'bg-green-100 text-green-800'
+                            }`}>
                             {donation.anonymous ? 'A' : donation.name.charAt(0)}
                           </div>
                           <div>
@@ -1865,11 +1919,10 @@ export default function HomePage() {
                         </div>
                       </td>
                       <td className="px-8 py-5 whitespace-nowrap">
-                        <span className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
-                          donation.type === 'corporate' ? 'bg-blue-100 text-blue-800' :
-                          donation.type === 'educational' ? 'bg-purple-100 text-purple-800' :
-                          'bg-green-100 text-green-800'
-                        }`}>
+                        <span className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${donation.type === 'corporate' ? 'bg-blue-100 text-blue-800' :
+                            donation.type === 'educational' ? 'bg-purple-100 text-purple-800' :
+                              'bg-green-100 text-green-800'
+                          }`}>
                           {donation.type}
                         </span>
                       </td>
@@ -1878,7 +1931,7 @@ export default function HomePage() {
                 </tbody>
               </table>
             </div>
-            
+
             <div className="bg-gray-50 px-8 py-4">
               <div className="flex justify-between items-center">
                 <div className="text-gray-700">
@@ -1890,11 +1943,11 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           {/* Donation Leaderboard */}
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Top Contributors This Month</h3>
-            
+
             <div className="space-y-4">
               {[
                 { rank: 1, name: "Tech Solutions Ltd.", amount: 1000000, trees: 2000, type: "corporate" },
@@ -1905,9 +1958,8 @@ export default function HomePage() {
               ].map((contributor) => (
                 <div key={contributor.rank} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-green-300">
                   <div className="flex items-center">
-                    <div className={`w-10 h-10 flex items-center justify-center rounded-lg mr-4 ${
-                      contributor.rank <= 3 ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-800'
-                    }`}>
+                    <div className={`w-10 h-10 flex items-center justify-center rounded-lg mr-4 ${contributor.rank <= 3 ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-800'
+                      }`}>
                       <div className="font-bold">{contributor.rank}</div>
                     </div>
                     <div>
@@ -1922,7 +1974,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-6 text-center">
               <Link href="/donate" className="inline-flex items-center text-green-700 hover:text-green-800 font-semibold">
                 <Trophy className="h-5 w-5 mr-2" />
@@ -1936,7 +1988,7 @@ export default function HomePage() {
     );
   };
 
-  {/* Trust Badges Section */}
+  {/* Trust Badges Section */ }
   const TrustBadges = () => (
     <div className="py-16 bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1948,7 +2000,7 @@ export default function HomePage() {
             Our commitment to excellence, transparency, and impact sets us apart
           </p>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="text-center group">
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
@@ -1957,7 +2009,7 @@ export default function HomePage() {
             <h3 className="font-bold text-gray-900 text-lg mb-2">Verified & Registered</h3>
             <p className="text-gray-600 text-sm">SECP Registered NGO • Tax-exempt status • Annual audits</p>
           </div>
-          
+
           <div className="text-center group">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
               <Award className="h-16 w-16 text-blue-600 mx-auto" />
@@ -1965,7 +2017,7 @@ export default function HomePage() {
             <h3 className="font-bold text-gray-900 text-lg mb-2">Award Winning</h3>
             <p className="text-gray-600 text-sm">Multiple national awards • UN recognition • Industry accolades</p>
           </div>
-          
+
           <div className="text-center group">
             <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-8 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
               <BarChart3 className="h-16 w-16 text-purple-600 mx-auto" />
@@ -1973,7 +2025,7 @@ export default function HomePage() {
             <h3 className="font-bold text-gray-900 text-lg mb-2">100% Transparency</h3>
             <p className="text-gray-600 text-sm">Real-time tracking • Public financials • GPS verification</p>
           </div>
-          
+
           <div className="text-center group">
             <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
               <Globe className="h-16 w-16 text-orange-600 mx-auto" />
@@ -1982,11 +2034,11 @@ export default function HomePage() {
             <p className="text-gray-600 text-sm">All provinces • Urban & rural • Community-led programs</p>
           </div>
         </div>
-        
+
         {/* Partners Section */}
         <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Our Trusted Partners</h3>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
               { name: "Ministry of Climate Change", logo: "🏛️" },
@@ -2003,7 +2055,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        
+
         {/* Certifications */}
         <div className="mt-12 text-center">
           <div className="inline-flex flex-wrap justify-center gap-6 bg-green-50 rounded-2xl p-8">
@@ -2029,10 +2081,10 @@ export default function HomePage() {
     </div>
   );
 
-  {/* FAQ Section */}
+  {/* FAQ Section */ }
   const FAQSection = () => {
     const [openIndex, setOpenIndex] = useState(null);
-    
+
     const faqs = [
       {
         question: "How do I know my trees are actually being planted?",
@@ -2059,7 +2111,7 @@ export default function HomePage() {
         answer: "Absolutely! We have customized corporate partnership programs including CSR initiatives, employee volunteering, and large-scale plantation drives. Contact our corporate partnerships team."
       }
     ];
-    
+
     return (
       <div className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2071,7 +2123,7 @@ export default function HomePage() {
               Get answers to common questions about our work
             </p>
           </div>
-          
+
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
@@ -2086,7 +2138,7 @@ export default function HomePage() {
                     <ChevronDown className="h-5 w-5 text-gray-500" />
                   )}
                 </button>
-                
+
                 {openIndex === index && (
                   <div className="px-6 py-4 border-t border-gray-100">
                     <p className="text-gray-600">{faq.answer}</p>
@@ -2095,10 +2147,10 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-8 text-center">
-            <Link 
-              href="/faq" 
+            <Link
+              href="/faq"
               className="inline-flex items-center text-green-700 hover:text-green-800 font-semibold"
             >
               <HelpCircle className="h-5 w-5 mr-2" />
@@ -2111,19 +2163,19 @@ export default function HomePage() {
     );
   };
 
-  {/* Newsletter Signup */}
+  {/* Newsletter Signup */ }
   const NewsletterSignup = () => (
     <div className="py-16 bg-gradient-to-r from-green-600 to-emerald-500">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <Mail className="h-16 w-16 mx-auto mb-6 text-white" />
-        
+
         <h2 className="text-3xl font-bold mb-4">
           Stay Updated on Our Journey
         </h2>
         <p className="text-xl mb-8 opacity-90">
           Join 50,000+ subscribers who receive monthly updates, impact reports, and plantation stories
         </p>
-        
+
         <div className="max-w-md mx-auto">
           <div className="flex flex-col sm:flex-row gap-4">
             <input
@@ -2139,7 +2191,7 @@ export default function HomePage() {
             We respect your privacy. Unsubscribe at any time.
           </p>
         </div>
-        
+
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm">
           <div className="flex items-center">
             <CheckCircle className="h-4 w-4 mr-2" />
