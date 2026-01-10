@@ -1416,20 +1416,20 @@ export default function HomePage() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Fund Allocation</h3>
-              
-              <div className="space-y-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+          <div className="md:col-span-2 lg:col-span-2">
+            <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Fund Allocation</h3>
+
+              <div className="space-y-4 lg:space-y-6">
                 {Object.entries(data.financialTransparency.allocation).map(([category, percentage]) => (
                   <div key={category}>
                     <div className="flex justify-between text-sm text-gray-600 mb-2">
                       <span className="font-medium capitalize">{category.replace(/([A-Z])/g, ' $1')}</span>
                       <span>{percentage}%</span>
                     </div>
-                    <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
-                      <div 
+                    <div className="h-3 lg:h-4 bg-gray-200 rounded-full overflow-hidden">
+                      <div
                         className={`h-full rounded-full ${
                           category === 'plantation' ? 'bg-green-500' :
                           category === 'communityDevelopment' ? 'bg-blue-500' :
@@ -1442,16 +1442,16 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              
-              <div className="mt-8 pt-8 border-t border-gray-200">
-                <div className="flex items-center justify-between">
+
+              <div className="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-gray-200">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
                   <div>
-                    <div className="text-3xl font-bold text-gray-900">PKR {data.statistics.totalFunds.toLocaleString()}</div>
-                    <div className="text-gray-600">Total Funds Received</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-gray-900">PKR {data.statistics.totalFunds.toLocaleString()}</div>
+                    <div className="text-sm lg:text-base text-gray-600">Total Funds Received</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-green-600">PKR {(data.statistics.totalFunds * 0.65).toLocaleString()}</div>
-                    <div className="text-gray-600">Directly to Plantation</div>
+                    <div className="text-2xl lg:text-3xl font-bold text-green-600">PKR {(data.statistics.totalFunds * 0.65).toLocaleString()}</div>
+                    <div className="text-sm lg:text-base text-gray-600">Directly to Plantation</div>
                   </div>
                 </div>
               </div>
@@ -1525,15 +1525,15 @@ export default function HomePage() {
           <h3 className="text-2xl font-bold text-gray-900 mb-6">Yearly Financial Performance</h3>
           
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
+            <table className="min-w-full divide-y divide-gray-200 text-sm lg:text-base">
               <thead>
                 <tr className="bg-gray-50">
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Funds Raised</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Trees Planted</th>
-                  <th className="px6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Plantation Cost</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Admin Cost</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Survival Rate</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Funds Raised</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Trees Planted</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Plantation Cost</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Admin Cost</th>
+                  <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Survival Rate</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
@@ -1545,20 +1545,20 @@ export default function HomePage() {
                   { year: "2019", funds: 41_600_000, trees: 83_200, plantation: 27_040_000, admin: 4_160_000, survival: 82.5 },
                 ].map((row) => (
                   <tr key={row.year} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">{row.year}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">PKR {row.funds.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{row.trees.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">PKR {row.plantation.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">PKR {row.admin.toLocaleString()}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap font-medium text-gray-900">{row.year}</td>
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">PKR {row.funds.toLocaleString()}</td>
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">{row.trees.toLocaleString()}</td>
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap hidden md:table-cell">PKR {row.plantation.toLocaleString()}</td>
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap hidden md:table-cell">PKR {row.admin.toLocaleString()}</td>
+                    <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
-                        <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden mr-3">
-                          <div 
+                        <div className="w-20 lg:w-24 h-2 bg-gray-200 rounded-full overflow-hidden mr-2 lg:mr-3">
+                          <div
                             className="h-full bg-green-500 rounded-full"
                             style={{ width: `${row.survival}%` }}
                           ></div>
                         </div>
-                        <span>{row.survival}%</span>
+                        <span className="text-xs lg:text-sm">{row.survival}%</span>
                       </div>
                     </td>
                   </tr>
